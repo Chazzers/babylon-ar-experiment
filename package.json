@@ -2,9 +2,9 @@
   "name": "babylon-ar-experiment",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "type": "module",
-  "source": "index.html",
+  "source": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel"
