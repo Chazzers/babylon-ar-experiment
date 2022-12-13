@@ -29,6 +29,9 @@ const createScene = async () => {
 
   const xr = await scene.createDefaultXRExperienceAsync({
     floorMeshes: [env.ground],
+    uiOptions: {
+      sessionMode: "immersive-ar",
+    },
   });
 
   return scene;
