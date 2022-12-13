@@ -5,7 +5,7 @@ import {
   HemisphericLight,
   Vector3,
   MeshBuilder,
-  Fea,
+  WebXRExperienceHelper,
 } from "babylonjs";
 
 const canvas = document.getElementById("canvas");
@@ -24,7 +24,8 @@ const createScene = async () => {
     { diameter: 2, segments: 32 },
     scene
   );
-  sphere.position.y = 1;
+  sphere.position.y = 2;
+  sphere.position.z = 5;
 
   const xr = await scene.createDefaultXRExperienceAsync({
     uiOptions: {
