@@ -1,0 +1,20 @@
+{
+  "name": "babylon-ar-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babylonjs": "^5.37.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.1"
+  }
+}
