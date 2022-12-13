@@ -5,6 +5,7 @@ import {
   HemisphericLight,
   Vector3,
   MeshBuilder,
+  Fea,
 } from "babylonjs";
 
 const canvas = document.getElementById("canvas");
@@ -25,13 +26,11 @@ const createScene = async () => {
   );
   sphere.position.y = 1;
 
-  const env = scene.createDefaultEnvironment();
-
   const xr = await scene.createDefaultXRExperienceAsync({
-    floorMeshes: [env.ground],
     uiOptions: {
       sessionMode: "immersive-ar",
     },
+    optionalFeatures: true,
   });
 
   return scene;
