@@ -6,6 +6,7 @@ import {
   Vector3,
   MeshBuilder,
   WebXRExperienceHelper,
+  Texture,
 } from "babylonjs";
 
 const canvas = document.getElementById("canvas");
@@ -24,6 +25,10 @@ const createScene = async () => {
     { diameter: 2, segments: 32 },
     scene
   );
+
+  const sphereMat = new BABYLON.StandardMaterial("sphereMat");
+  sphereMat.diffuseTexture = new Texture("./textures/earth.jpg");
+
   sphere.position.y = 2;
   sphere.position.z = 5;
 
