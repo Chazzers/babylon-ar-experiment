@@ -6,7 +6,7 @@
   "source": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cp -R ./textures ./dist && parcel",
+    "start": "parcel",
     "build": "cp -R ./textures ./dist && parcel build"
   },
   "author": "",

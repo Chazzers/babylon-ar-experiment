@@ -27,7 +27,9 @@ const createScene = async () => {
   );
 
   const sphereMat = new StandardMaterial("sphereMat");
-  sphereMat.diffuseTexture = new Texture("./textures/earth.jpeg");
+  const imageUrl = new URL("./textures/earth.jpeg", import.meta.url);
+  console.log(imageUrl);
+  sphereMat.diffuseTexture = new Texture(imageUrl.href);
 
   sphere.material = sphereMat;
 
