@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
-    "build": "parcel build"
+    "build": "cp -R ./textures ./dist && parcel build"
   },
   "author": "",
   "license": "MIT",
