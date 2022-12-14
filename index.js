@@ -5,8 +5,8 @@ import {
   HemisphericLight,
   Vector3,
   MeshBuilder,
-  WebXRExperienceHelper,
   Texture,
+  StandardMaterial,
 } from "babylonjs";
 
 const canvas = document.getElementById("canvas");
@@ -26,8 +26,10 @@ const createScene = async () => {
     scene
   );
 
-  const sphereMat = new BABYLON.StandardMaterial("sphereMat");
-  sphereMat.diffuseTexture = new Texture("./textures/earth.jpg");
+  const sphereMat = new StandardMaterial("sphereMat");
+  sphereMat.diffuseTexture = new Texture("./earth.jpeg");
+
+  sphere.material = sphereMat;
 
   sphere.position.y = 2;
   sphere.position.z = 5;
